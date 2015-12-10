@@ -88,7 +88,7 @@ $(function() {
 				// we are using the elastislide plugin:
 				// http://tympanus.net/codrops/2011/09/12/elastislide-responsive-carousel/
 				$esCarousel.show().elastislide({
-					imageW 	: 218,
+					imageW 	: 200,
 					onClick	: function( $item ) {
 						if( anim ) return false;
 						anim	= true;
@@ -184,7 +184,14 @@ $(function() {
 					largesrc	= $thumb.data('id'),
 					title		= $thumb.data('description');
 
-				$rgGallery.find('div.rg-image').empty().append('<iframe width="960" src="https://www.youtube.com/embed/' + largesrc + '" frameborder="0" allowfullscreen></iframe>');
+				var str;
+				if (largesrc === 0) {
+					str = '<img src="images/wip.jpg" width="960" />';
+				} else {
+					str = '<iframe width="960" src="https://player.vimeo.com/video/' + largesrc + '" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>'
+				}
+
+				$rgGallery.find('div.rg-image').empty().append(str);
 
 				if( title )
 					$rgGallery.find('div.rg-caption').show().children('p').empty().text( title );
@@ -224,3 +231,25 @@ $(function() {
 	Gallery.addItems( $new );
 	*/
 });
+
+function vimeoLoadingThumb(ids){
+	var i, id, len;
+
+	for (i = 0, len = ids.length; i < len; i++) {
+		id = ids[i];
+	    var url = "http://vimeo.com/api/v2/video/" + id + ".json?callback=showThumb";
+
+	    var id_img = "#vimeo-" + id;
+
+	    var script = document.createElement( 'script' );
+	    script.src = url;
+
+	    $(id_img).before(script);
+	}
+}
+
+
+function showThumb(data){
+    var id_img = "#vimeo-" + data[0].id;
+    $(id_img).attr('src',data[0].thumbnail_medium);
+}
