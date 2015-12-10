@@ -1,0 +1,43 @@
+@import url('reset.css');
+
+/* General Codrops Demo Style */
+body{
+	background:#1F1F1F url(../images/pattern.png) repeat top left;
+	color:#fff;
+	font-family: 'PT Sans Narrow', Arial, sans-serif;
+	font-size:14px;
+}
+a{
+	color:#ddd;
+	text-decoration:none;
+}
+a:hover{
+	color:#00c6e3;
+}
+p.sub{
+	padding:25px 10px 10px 10px;
+	text-align:left;
+	color:#aaa;
+}
+.clr{
+	clear:both;
+}
+.content{
+	width:768px;
+    margin: 0 auto;
+	/*margin:0px 25px 30px 25px;*/
+}
+@media screen and (max-width: 768px) {
+	.content{
+		width:100%;
+	}
+	.header a{
+		display:block;
+		text-align:center;
+		font-size:10px;
+		text-shadow:none;
+	}
+	.header span.right_ab{
+		float:none;
+	}
+}
