@@ -1,6 +1,6 @@
 /* Elastislide Style */
 .es-carousel-wrapper{
-	background: #101010;
+	background: #000000;
 	padding:10px 47px;
 	-moz-border-radius: 10px;
 	-webkit-border-radius: 10px;
@@ -28,7 +28,7 @@
 	display:block;
 	border-style:solid;
 	border-color:#222;
-	opacity:0.8;
+	opacity:0.5;
 	-webkit-touch-callout:none;
 	/* option */
 	-webkit-transition: all 0.2s ease-in-out;
