@@ -71,7 +71,7 @@ $(function() {
 					// _addViewModes();
 
 					// add large image wrapper
-					_addImageWrapper();
+					$('#img-wrapper-tmpl').tmpl( {itemsCount : itemsCount} ).prependTo( $rgGallery );
 
 					// show first image
 					_showImage( $items.eq( current ) );
@@ -103,77 +103,10 @@ $(function() {
 				$esCarousel.elastislide( 'setCurrent', current );
 
 			},
-
-			_addImageWrapper= function() {
-
-				// adds the structure for the large image and the navigation buttons (if total items > 1)
-				// also initializes the navigation events
-
-				$('#img-wrapper-tmpl').tmpl( {itemsCount : itemsCount} ).prependTo( $rgGallery );
-
-				if( itemsCount > 1 ) {
-					// addNavigation
-					var $navPrev		= $rgGallery.find('a.rg-image-nav-prev'),
-						$navNext		= $rgGallery.find('a.rg-image-nav-next'),
-						$imgWrapper		= $rgGallery.find('div.rg-image');
-
-					$navPrev.on('click.rgGallery', function( event ) {
-						_navigate( 'left' );
-						return false;
-					});
-
-					$navNext.on('click.rgGallery', function( event ) {
-						_navigate( 'right' );
-						return false;
-					});
-
-					// add touchwipe events on the large image wrapper
-					$imgWrapper.touchwipe({
-						wipeLeft			: function() {
-							_navigate( 'right' );
-						},
-						wipeRight			: function() {
-							_navigate( 'left' );
-						},
-						preventDefaultEvents: false
-					});
-
-					$(document).on('keyup.rgGallery', function( event ) {
-						if (event.keyCode == 39)
-							_navigate( 'right' );
-						else if (event.keyCode == 37)
-							_navigate( 'left' );
-					});
-
-				}
-
-			},
-			_navigate		= function( dir ) {
-
-				// navigate through the large images
-
-				if( anim ) return false;
-				anim	= true;
-
-				if( dir === 'right' ) {
-					if( current + 1 >= itemsCount )
-						current = 0;
-					else
-						++current;
-				}
-				else if( dir === 'left' ) {
-					if( current - 1 < 0 )
-						current = itemsCount - 1;
-					else
-						--current;
-				}
-
-				_showImage( $items.eq( current ) );
-
-			},
 			_showImage		= function( $item ) {
 
 				// shows the large image that is associated to the $item
+				current	= $item.index();
 
 				var $loader	= $rgGallery.find('div.rg-loading').show();
 
