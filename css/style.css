@@ -1,10 +1,6 @@
-.container hr{
-	position:relative;
-	top:150px;
-}
 .rg-image-wrapper{
 	position:relative;
-	padding:20px 30px 10px 30px;
+	padding:0px 30px 0px 30px;
 	background:transparent url(../images/black.png) repeat top left;
 	-moz-border-radius: 10px;
 	-webkit-border-radius: 10px;

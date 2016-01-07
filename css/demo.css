@@ -25,8 +25,63 @@ p.sub{
 .content{
 	width:768px;
     margin: 0 auto;
-	/*margin:0px 25px 30px 25px;*/
 }
+
+header
+{
+	position: relative;
+	width: auto;
+	max-width: 768px;
+	margin: 0 auto 0px auto;
+}
+
+hr{
+	position:absolute;
+	width: 100%;
+	top:134px;
+	z-index: 1;
+}
+
+nav
+{
+  float: right;
+  margin-right: 30px;
+  margin-top: 82px;
+}
+
+nav ul
+{
+	list-style: none;
+}
+
+nav ul li
+{
+	display: block;
+	float: left;
+	position:relative;
+	margin: 0px 2px;
+}
+
+#animation {
+    width: 165px;
+    height: 61px;
+    background: url('../images/navigation.png') -217px -2px;
+}
+
+#arts {
+    top: 12px;
+    width: 71px;
+    height: 49px;
+    background: url('../images/navigation.png') -460px -2px;
+}
+
+#about {
+    top: 22px;
+    width: 76px;
+    height: 40px;
+    background: url('../images/navigation.png') -779px -2px;
+}
+
 @media screen and (max-width: 768px) {
 	.content{
 		width:100%;
