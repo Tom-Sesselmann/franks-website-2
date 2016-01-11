@@ -75,38 +75,6 @@ nav ul li a p
 	margin: 10px;
 }
 
-#animation {
-    width: 165px;
-    height: 61px;
-}
-
-#animation img {
-	top: -2px;
-	left: -217px;
-}
-
-#arts {
-    top: 12px;
-    width: 71px;
-    height: 49px;
-}
-
-#arts img {
-	top: -2px;
-	left: -460px;
-}
-
-#about {
-    top: 22px;
-    width: 76px;
-    height: 40px;
-}
-
-#about img {
-	top: -2px;
-	left: -779px;
-}
-
 @media screen and (max-width: 768px) {
 	.content{
 		width:100%;
