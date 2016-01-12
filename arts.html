@@ -27,8 +27,7 @@
 		<meta name="theme-color" content="#ffffff">
         <link rel="stylesheet" type="text/css" href="css/demo.css" />
         <link rel="stylesheet" type="text/css" href="css/arts.css" />
-		<link rel="stylesheet" type="text/css" href="css/style.css" />
-		<link rel="stylesheet" type="text/css" href="css/elastislide.css" />
+		<link rel="stylesheet" type="text/css" href="coverflow/css/style.css">
 		<link href='http://fonts.googleapis.com/css?family=PT+Sans+Narrow&v1' rel='stylesheet' type='text/css' />
 		<link href='http://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css' />
     </head>
@@ -54,10 +53,109 @@
 		</header>
 		<div class="container">
 			<div class="content">
+				<div id="coverflow">
+					<div class="covers">
+						<ul>
+							<li><div class="imgdiv">
+									<a href="http://www.example.com" target="_blank">
+										<img src="coverflow/img/01-tunnel.jpg" alt="">
+									</a>
+								</div>
+								<div class="text">
+									<p>The text and images are easily indexed by search engines</p>
+								</div>
+							</li>
+							<li><div class="imgdiv">
+									<a href="coverflow/img/02-couple.jpg" data-gallery="gallery" data-cap="lightbox caption 02">
+										<img src="coverflow/img/02-couple.jpg" alt="">
+									</a>
+								</div>
+								<div class="text">
+									<p>The text over the images is optional <br> and it is <span style="color: #f55; font-weight: bold; font-size: 20px;">CSS</span><span style="color: yellow; font-style: italic;">formatted</span></p>
+								</div>
+							</li>
+							<li><div class="imgdiv">
+									<a href="coverflow/img/03-bridge.jpg" data-gallery="gallery" data-cap="lightbox caption 03">
+										<img src="coverflow/img/03-bridge.jpg" alt="">
+									</a>
+								</div>
+								<div class="text">
+									<p>You can also have <a href="http://www.example.com" target="_blank" style="color: #00a;">links</a></p>
+								</div>
+							</li>
+							<li><div class="imgdiv">
+									<a>
+										<img src="coverflow/img/04-china.jpg" alt="">
+									</a>
+								</div>
+								<div class="text">
+									
+								</div>
+							</li>
+							<li><div class="imgdiv">
+									<a href="coverflow/img/05-camera.jpg" data-gallery="gallery" data-cap="lightbox caption 05">
+										<img src="coverflow/img/05-camera.jpg" alt="">
+									</a>
+								</div>
+								<div class="text">
+									<p>This is a new CSS Jquery Coverflow.</p><p>Install it for free on your website</p>
+								</div>
+							</li>
+							<li><div class="imgdiv">
+									<a href="coverflow/img/06-free.jpg" data-gallery="gallery" data-cap="lightbox caption 06">
+										<img src="coverflow/img/06-free.jpg" alt="">
+									</a>
+								</div>
+								<div class="text">
+									<p>Works great on iPhone and iPad</p><p>with tap and swipe movements</p>
+								</div>
+							</li>
+							<li><div class="imgdiv">
+									<a href="coverflow/img/07-joy.jpg" data-gallery="gallery" data-cap="lightbox caption 07">
+										<img src="coverflow/img/07-joy.jpg" alt="">
+									</a>
+								</div>
+								<div class="text">
+									<p>The Coverflow is responsive</p><p>Narrow the width of your browser to see</p>
+								</div>
+							</li>
+							<li><div class="imgdiv">
+									<a href="coverflow/img/08-feet.jpg" data-gallery="gallery" data-cap="lightbox caption 08">
+										<img src="coverflow/img/08-feet.jpg" alt="">
+									</a>
+								</div>
+								<div class="text">
+									<p>Clicking on this image</p><p>Will open a lightbox with a bigger image</p>
+								</div>
+							</li>
+							<li><div class="imgdiv">
+									<a href="http://www.example.com" target="_blank">
+										<img src="coverflow/img/09-girl.jpg" alt="">
+									</a>
+								</div>
+								<div class="text">
+									<p>Clicking on this image</p><p>Will take you to an external link</p>
+								</div>
+							</li>
+							<li><div class="imgdiv">
+									<a href="coverflow/img/10-beach.jpg" data-gallery="gallery" data-cap="lightbox caption 10">
+										<img src="coverflow/img/10-beach.jpg" alt="">
+									</a>
+								</div>
+								<div class="text">
+									<p>But it could also take you to a link inside your web page</p>
+								</div>
+							</li>
+							</ul>
+					</div>
+					<div class="Controller"></div>
+					<div class="ScrollBar"></div>
+				</div>
 			</div><!-- content -->
 		</div><!-- container -->
-		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-		<script type="text/javascript" src="js/jquery.tmpl.min.js"></script>
-		<script type="text/javascript" src="js/gallery.js"></script>
+
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
+	<script src="coverflow/js/coverflow.min.js"></script>
+	<script> $coverflow = $("#coverflow").coverflow({"path":"coverflow/"}); </script>
     </body>
 </html>
