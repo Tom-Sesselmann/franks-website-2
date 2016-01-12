@@ -4,11 +4,11 @@
 body{
 	background:#000000;
 	color:#FFCC00;
-	font-family: 'PT Sans Narrow', Arial, sans-serif;
+	font-family: Arial, sans-serif;
 	font-size:14px;
 }
 a{
-	color:#ddd;
+	color:#FFCC00;
 	text-decoration:none;
 }
 a:hover{
@@ -73,6 +73,18 @@ nav ul li a img
 nav ul li a p
 {
 	margin: 10px;
+}
+
+/* MISC */
+.clear
+{
+	clear:both;
+}
+.hidden
+{
+	position:absolute;
+	clip: rect(1px 1px 1px 1px); /* IE6 & 7 */
+	clip: rect(1px, 1px, 1px, 1px);
 }
 
 @media screen and (max-width: 768px) {

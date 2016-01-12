@@ -1,6 +1,6 @@
 .rg-image-wrapper{
 	position:relative;
-	padding:0px 30px 0px 30px;
+	padding:0px 30px x0px 30px;
 	background:transparent url(../images/black.png) repeat top left;
 	-moz-border-radius: 10px;
 	-webkit-border-radius: 10px;
@@ -79,15 +79,4 @@
 	-webkit-border-radius: 10px;
 	border-radius: 10px;
 	opacity:0.7;
-}
-/* MISC */
-.clear
-{
-	clear:both;
-}
-.hidden
-{
-	position:absolute;
-	clip: rect(1px 1px 1px 1px); /* IE6 & 7 */
-	clip: rect(1px, 1px, 1px, 1px);
 }
