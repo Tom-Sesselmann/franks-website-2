@@ -1,70 +1,160 @@
 {
   "Images": [
     {
-      "imageURL": "img/01-tunnel.jpg",
-      "target": "_blank",
-      "link": "http://www.example.com",
-      "text": "<p>The text and images are easily indexed by search engines</p>"
-    },
-    {
-      "imageURL": "img/02-couple.jpg",
+      "imageURL": "img/Tom&Jerry_SKY.jpg",
       "target": "lightbox",
-      "link": "img/02-couple.jpg",
-      "text": "<p>The text over the images is optional <br> and it is <span style=\"color: #f55; font-weight: bold; font-size: 20px;\">CSS</span><span style=\"color: yellow; font-style: italic;\">formatted</span></p>",
-      "lightboxCaption": "lightbox caption 02"
-    },
-    {
-      "imageURL": "img/03-bridge.jpg",
-      "target": "lightbox",
-      "link": "img/03-bridge.jpg",
-      "text": "<p>You can also have <a href=\"http://www.example.com\" target=\"_blank\" style=\"color: #00a;\">links</a></p>",
-      "lightboxCaption": "lightbox caption 03"
-    },
-    {
-      "imageURL": "img/04-china.jpg",
-      "target": "none",
+      "link": "img/Tom&Jerry_SKY.jpg",
       "text": ""
     },
     {
-      "imageURL": "img/05-camera.jpg",
+      "imageURL": "img/img2.jpg",
       "target": "lightbox",
-      "link": "img/05-camera.jpg",
-      "text": "<p>This is a new CSS Jquery Coverflow.</p><p>Install it for free on your website</p>",
-      "lightboxCaption": "lightbox caption 05"
+      "link": "img/img2.jpg",
+      "text": ""
     },
     {
-      "imageURL": "img/06-free.jpg",
+      "imageURL": "img/img3.jpg",
       "target": "lightbox",
-      "link": "img/06-free.jpg",
-      "text": "<p>Works great on iPhone and iPad</p><p>with tap and swipe movements</p>",
-      "lightboxCaption": "lightbox caption 06"
+      "link": "img/img3.jpg",
+      "text": ""
     },
     {
-      "imageURL": "img/07-joy.jpg",
+      "imageURL": "img/cover.png",
       "target": "lightbox",
-      "link": "img/07-joy.jpg",
-      "text": "<p>The Coverflow is responsive</p><p>Narrow the width of your browser to see</p>",
-      "lightboxCaption": "lightbox caption 07"
+      "link": "img/cover.png",
+      "text": ""
     },
     {
-      "imageURL": "img/08-feet.jpg",
+      "imageURL": "img/illu10.png",
       "target": "lightbox",
-      "link": "img/08-feet.jpg",
-      "text": "<p>Clicking on this image</p><p>Will open a lightbox with a bigger image</p>",
-      "lightboxCaption": "lightbox caption 08"
+      "link": "img/illu10.png",
+      "text": ""
     },
     {
-      "imageURL": "img/09-girl.jpg",
-      "target": "_blank",
-      "link": "http://www.example.com",
-      "text": "<p>Clicking on this image</p><p>Will take you to an external link</p>"
+      "imageURL": "img/illu23.png",
+      "target": "lightbox",
+      "link": "img/illu23.png",
+      "text": ""
     },
     {
-      "imageURL": "img/10-beach.jpg",
+      "imageURL": "img/to build a fire001preview.jpg",
       "target": "lightbox",
-      "link": "img/10-beach.jpg",
-      "text": "<p>But it could also take you to a link inside your web page</p>",
-      "lightboxCaption": "lightbox caption 10"
+      "link": "img/to build a fire001preview.jpg",
+      "text": ""
+    },
+    {
+      "imageURL": "img/to build a fire10.jpg",
+      "target": "lightbox",
+      "link": "img/to build a fire10.jpg",
+      "text": ""
+    },
+    {
+      "imageURL": "img/Badger and Bear-final-1.jpg",
+      "target": "lightbox",
+      "link": "img/Badger and Bear-final-1.jpg",
+      "text": ""
+    },
+    {
+      "imageURL": "img/Papa'.png",
+      "target": "lightbox",
+      "link": "img/Papa'.png",
+      "text": ""
+    },
+    {
+      "imageURL": "img/mike-.jpg",
+      "target": "lightbox",
+      "link": "img/mike-.jpg",
+      "text": ""
+    },
+    {
+      "imageURL": "img/danny.jpg",
+      "target": "lightbox",
+      "link": "img/danny.jpg",
+      "text": ""
+    },
+    {
+      "imageURL": "img/I ninjinelli.jpg",
+      "target": "lightbox",
+      "link": "img/I ninjinelli.jpg",
+      "text": ""
+    },
+    {
+      "imageURL": "img/aly-24.jpg",
+      "target": "lightbox",
+      "link": "img/aly-24.jpg",
+      "text": ""
+    },
+    {
+      "imageURL": "img/ride for rob.jpg",
+      "target": "lightbox",
+      "link": "img/ride for rob.jpg",
+      "text": ""
+    },
+    {
+      "imageURL": "img/Matteo_Nadia_Wedding_invitation.jpg",
+      "target": "lightbox",
+      "link": "img/Matteo_Nadia_Wedding_invitation.jpg",
+      "text": ""
+    },
+    {
+      "imageURL": "img/BodyPart_watercolor.jpg",
+      "target": "lightbox",
+      "link": "img/BodyPart_watercolor.jpg",
+      "text": ""
+    },
+    {
+      "imageURL": "img/M ans S illustration.jpg",
+      "target": "lightbox",
+      "link": "img/M ans S illustration.jpg",
+      "text": ""
+    },
+    {
+      "imageURL": "img/profile pic001.jpg",
+      "target": "lightbox",
+      "link": "img/profile pic001.jpg",
+      "text": ""
+    },
+    {
+      "imageURL": "img/rifined3.jpg",
+      "target": "lightbox",
+      "link": "img/rifined3.jpg",
+      "text": ""
+    },
+    {
+      "imageURL": "img/rifined2.jpg",
+      "target": "lightbox",
+      "link": "img/rifined2.jpg",
+      "text": ""
+    },
+    {
+      "imageURL": "img/rifined1.jpg",
+      "target": "lightbox",
+      "link": "img/rifined1.jpg",
+      "text": ""
+    },
+    {
+      "imageURL": "img/animal.jpg",
+      "target": "lightbox",
+      "link": "img/animal.jpg",
+      "text": ""
+    },
+    {
+      "imageURL": "img/illustr1.jpg",
+      "target": "lightbox",
+      "link": "img/illustr1.jpg",
+      "text": ""
+    },
+    {
+      "imageURL": "img/illustr2.jpg",
+      "target": "lightbox",
+      "link": "img/illustr2.jpg",
+      "text": ""
+    },
+    {
+      "imageURL": "img/illustr3.jpg",
+      "target": "lightbox",
+      "link": "img/illustr3.jpg",
+      "text": ""
     }
   ]
 }

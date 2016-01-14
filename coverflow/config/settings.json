@@ -2,12 +2,12 @@
   "Global": {
     "path": "coverflow/",
     "coverflowWidth": "1200",
-    "coverflowHeight": "450",
-    "backgroundColor": "",
-    "imageWidth": "250",
-    "imageHeight": "200",
-    "imageSpacing": "100",
-    "frontImageSpacing": "140",
+    "coverflowHeight": "600",
+    "backgroundColor": "#000000",
+    "imageWidth": "300",
+    "imageHeight": "354",
+    "imageSpacing": "75",
+    "frontImageSpacing": "100",
     "imageRotation": "60",
     "imagePerspective": "600",
     "frontImageScaleRatio": "150",
@@ -18,20 +18,20 @@
     "transitionFunction": "ease"
   },
   "Reflection": {
-    "reflection": true,
-    "reflectionColor": "#ffffff",
-    "reflectionSize": "33",
-    "reflectionSpread": "50",
+    "reflection": false,
+    "reflectionColor": "#000000",
+    "reflectionSize": "1",
+    "reflectionSpread": "90",
     "reflectionOpacity": "50"
   },
   "Scrollbar": {
-    "scrollbar": true,
-    "scrollbarWidth": "770",
+    "scrollbar": false,
+    "scrollbarWidth": "768",
     "scrollbarHeight": "20",
     "thumbWidth": "auto",
     "scrollBackColor": "rgba(100, 100, 100, 0.3)",
     "thumbColor": "#f2f2f2",
-    "borderRadius": "10",
+    "borderRadius": "768",
     "arrows": false,
     "marginTop": "330"
   },
@@ -41,7 +41,7 @@
     "shadowOpacity": "15"
   },
   "Controller": {
-    "controller": true,
+    "controller": false,
     "arrows": true,
     "autoPlay": false,
     "pauseDelay": "3000",

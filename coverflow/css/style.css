@@ -1,7 +1,7 @@
 #coverflow {
 	max-width: 1200px;
-	height: 450px;
-	background: rgba(0, 0, 0, 0);
+	height: 600px;
+	background: rgb(0, 0, 0);
 	position: relative;
 	margin: 0 auto;
 	-moz-user-select: none;
@@ -20,19 +20,19 @@
 }
 
 #coverflow ul {
-	top: 50px;
+	top: 60px;
 	width: 5000px;
 	margin: 0;
 	padding: 0;
 	position: absolute;
 	-webkit-transition: -webkit-transform 0.5s ease;
 	transition: transform 0.5s ease;
-	-webkit-transform: translate3d(75px, 0, 0);
-	transform: translate3d(75px, 0, 0);
+	-webkit-transform: translate3d(-425px, 0, 0);
+	transform: translate3d(-425px, 0, 0);
 }
 
 #coverflow li {
-	width: 100px;
+	width: 75px;
 	list-style: none;
 	float: left;
 	-webkit-transition: margin 0.5s ease, -webkit-transform 0.5s ease;
@@ -51,31 +51,23 @@
 	box-shadow: 30px 5px 15px -10px rgba(0,0,0,0.15), -30px 5px 15px -10px rgba(0,0,0,0.15);
 }
 
-#coverflow .imgdiv img {
-	width: 250px;
+#coverflow .frame {
+	width: 306px;
 	display: block;
+	position: relative;
+	left: -3px;
+	top: 14px;
+}
+
+#coverflow .image {
+	max-width: 300px;
+	max-height: 300px;
+	position: absolute;
+	top: 17px;
 }
 
 #coverflow .refl {
-	display: block;
-	position: absolute;
-	top: 100%;
-	-webkit-transform: scaleY(-1);
-	transform: scaleY(-1);
-	opacity: 0.5;
-}
-
-#coverflow .refl img {
-	display: block;
-}
-
-#coverflow .refl::before {
-	content: "";
-	position: absolute;
-	width: 102%;
-	margin-left: -1%;
-	height: 100%;
-	box-shadow: inset #000 0 167.5px 50px;
+	display: none;
 }
 
 #coverflow .text {
@@ -103,34 +95,34 @@
 	text-align: center;
 }
 
-li:nth-child(-n+4) .imgdiv,
+li:nth-child(-n+12) .imgdiv,
 #coverflow ul li .leftItems {
 	-webkit-transform: perspective(600px) rotateY(60deg);
 	transform: perspective(600px) rotateY(60deg);
 }
 
-li:nth-child(n+6) .imgdiv,
+li:nth-child(n+14) .imgdiv,
 #coverflow ul li .rightItems {
 	-webkit-transform: perspective(600px) rotateY(-60deg);
 	transform: perspective(600px) rotateY(-60deg);
 }
 
-li:nth-child(5) .imgdiv,
+li:nth-child(13) .imgdiv,
 #coverflow ul li .straight {
 	-webkit-transform: rotateY(0deg) scale(1.5);
 	transform: rotateY(0deg) scale(1.5);
 }
 
-#coverflow li:nth-child(-n+4),
+#coverflow li:nth-child(-n+12),
 #coverflow ul li.leftLI {
-	-webkit-transform: translate3d(-140px, 0, 0);
-	transform: translate3d(-140px, 0, 0);
+	-webkit-transform: translate3d(-100px, 0, 0);
+	transform: translate3d(-100px, 0, 0);
 }
 
-#coverflow li:nth-child(n+6),
+#coverflow li:nth-child(n+14),
 #coverflow ul li.rightLI {
-	-webkit-transform: translate3d(140px, 0, 0);
-	transform: translate3d(140px, 0, 0);
+	-webkit-transform: translate3d(100px, 0, 0);
+	transform: translate3d(100px, 0, 0);
 }
 
 #coverflow ul .straightLI {
@@ -158,89 +150,4 @@ li:nth-child(5) .imgdiv,
 
 #coverflow .Lightbox {
 	display: block;
-}
-
-.Controller { z-index: 10000; position: absolute; left: 50%; margin-top: 380px; }
-#relativediv { position: relative; left: -50%; }
-.Controller img { margin-right: 3px; position: relative; opacity: .6; cursor: pointer; }
-.Controller img:hover { opacity: 1; }
-#prev {-webkit-transform: scaleX(-1); transform: scaleX(-1);}
-#play { position: relative; }
-#pause-span { visibility: hidden; position: relative; }
-#pause { position: absolute; right: 100%; }
-.Preloader {
-	position: absolute;
-	width: 30px;
-	height: 30px;
-	margin-left: 62%;
-	margin-top: 1%;
-	background-color: #aaa;
-	border: 3px solid #333;
-	-webkit-border-radius: 100%;
-	border-radius: 100%;
-	z-index: 9999;
-	opacity: 0;
-	visibility: hidden;
-	-webkit-transition: -webkit-transform 3s ease-in-out,
-		opacity 3s ease-in-out;
-	transition: transform 3s ease-in-out,
-		opacity 3s ease-in-out;
-}
-.modified { opacity: 1; -webkit-transform: scale(0); transform: scale(0); }
-
-.ScrollBar {
-	width: 770px;
-	height: 20px;
-	cursor: pointer;
-	position: absolute;
-	z-index: 10000;
-	margin-left: auto;
-	margin-right: auto;
-	left: 0;
-	right: 0;
-	margin-top:330px;
-	overflow: hidden;
-}
-
-.ScrollBar .firstArrow,
-.ScrollBar .lastArrow{
-	display: none;
-	width: 20px;
-	height: 20px;
-	background: ;
-	float: left;
-	border-radius: 10px;
-}
-
-.ScrollBar .firstTriangle,
-.ScrollBar .lastTriangle {
-	margin-top: 6px;
-	margin-left: 8px;
-	width: 0;
-	height: 0;
-	border-top: 4px solid transparent;
-	border-bottom: 4px solid transparent;
-}
-
-.ScrollBar .firstTriangle { border-right: 5px solid #777; }
-.ScrollBar .lastTriangle { border-left: 5px solid #777; }
-
-.ScrollBar .dragArea {
-	width: 770px;
-	height: 20px;
-	background: rgba(100, 100, 100, 0.298039);
-	float: left;
-	border-radius: 10px;
-}
-
-.ScrollBar .tracker {
-	width: 0px;
-	height: 16px;
-	background: rgb(242, 242, 242);
-	margin: 2px;
-	border-radius: 10px;
-	float: left;
-	left: 0;
-	z-index: 1000;
-	transition: left 0.5s;
 }
