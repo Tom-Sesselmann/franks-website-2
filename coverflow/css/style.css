@@ -159,3 +159,31 @@ li:nth-child(13) .imgdiv,
 #coverflow .Lightbox {
 	display: block;
 }
+
+.Controller { z-index: 10000; position: absolute; left: 50%; margin-top: 480px; }
+#relativediv { position: relative; left: -50%; }
+.Controller img { margin-right: 3px; position: relative; opacity: .6; cursor: pointer; }
+.Controller img:hover { opacity: 1; }
+#prev {-webkit-transform: scaleX(-1); transform: scaleX(-1);}
+#play { position: relative; }
+#pause-span { visibility: hidden; position: relative; }
+#pause { position: absolute; right: 100%; }
+.Preloader {
+	position: absolute;
+	width: 30px;
+	height: 30px;
+	margin-left: 62%;
+	margin-top: 1%;
+	background-color: #aaa;
+	border: 3px solid #333;
+	-webkit-border-radius: 100%;
+	border-radius: 100%;
+	z-index: 9999;
+	opacity: 0;
+	visibility: hidden;
+	-webkit-transition: -webkit-transform 3s ease-in-out,
+		opacity 3s ease-in-out;
+	transition: transform 3s ease-in-out,
+		opacity 3s ease-in-out;
+}
+.modified { opacity: 1; -webkit-transform: scale(0); transform: scale(0); }
