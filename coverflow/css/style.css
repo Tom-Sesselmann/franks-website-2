@@ -42,11 +42,12 @@
 	}
 
 #coverflow .imgdiv {
-	width: 250px;
+	width: 306px;
 	-webkit-transition: -webkit-transform 0.5s ease;
 	transition: transform 0.5s ease;
 	pointer-events: auto;
 	position: relative;
+	margin-top: 15px;
 	display: block;
 	box-shadow: 30px 5px 15px -10px rgba(0,0,0,0.15), -30px 5px 15px -10px rgba(0,0,0,0.15);
 }
@@ -55,15 +56,22 @@
 	width: 306px;
 	display: block;
 	position: relative;
-	left: -3px;
-	top: 14px;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	margin: auto;
 }
 
 #coverflow .image {
 	max-width: 300px;
 	max-height: 300px;
 	position: absolute;
-	top: 17px;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	margin: auto;
 }
 
 #coverflow .refl {
