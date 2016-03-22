@@ -23,30 +23,42 @@ p.sub{
 	clear:both;
 }
 .content{
-	width:768px;
+	width:895px;
     margin: 0 auto;
+    /*position:fixed !important;*/
+	/*position:absolute;*/
+	top:0;
+	right:0;
+	bottom:0;
+	left:0;
 }
 
 header
 {
 	position: relative;
 	width: auto;
-	max-width: 768px;
+	max-width: 895px;
 	margin: 0 auto 0px auto;
+}
+
+header img.title-logo
+{
+	width: 200px;
 }
 
 hr{
 	position:absolute;
 	width: 100%;
-	top:134px;
+	top:74px;
 	z-index: 1;
 }
 
 nav
 {
   float: right;
-  margin-right: 30px;
-  margin-top: 82px;
+  margin-right: 0px;
+  margin-top: 30px;
+  height: 52px;
 }
 
 nav ul
@@ -59,15 +71,15 @@ nav ul li
 	display: block;
 	float: left;
 	position:relative;
-	margin: 0px 2px;
+	margin: 0px 1px;
 	overflow: hidden;
 }
 
 nav ul li a img
 {
 	position: absolute;
-	width: 1024px;
-	height: 128px;
+	width: 887px;
+	height: 111px;
 }
 
 nav ul li a p

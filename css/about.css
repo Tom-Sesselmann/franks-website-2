@@ -1,32 +1,32 @@
 #animation {
-    top: 21px;
-    width: 106px;
-    height: 40px;
+    top: 18px;
+    width: 93px;
+    height: 35px;
 }
 
 #animation img {
 	top: -2px;
-	left: -669px;
+	left: -579px;
 }
 
 #arts {
-    top: 12px;
-    width: 70px;
-    height: 49px;
+    top: 10px;
+    width: 61px;
+    height: 43px;
 }
 
 #arts img {
 	top: -2px;
-	left: -386px;
+	left: -334px;
 }
 
 #about {
     top: 0px;
-    width: 118px;
-    height: 61px;
+    width: 103px;
+    height: 53px;
 }
 
 #about img {
 	top: -2px;
-	left: -2px;
+	left: 0px;
 }
