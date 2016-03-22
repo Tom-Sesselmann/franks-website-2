@@ -25,40 +25,36 @@ p.sub{
 .content{
 	width:895px;
     margin: 0 auto;
-    /*position:fixed !important;*/
-	/*position:absolute;*/
-	top:0;
-	right:0;
-	bottom:0;
-	left:0;
 }
 
 header
 {
 	position: relative;
-	width: auto;
 	max-width: 895px;
 	margin: 0 auto 0px auto;
 }
 
 header img.title-logo
 {
+	margin-left: 5px;
 	width: 200px;
 }
 
 hr{
-	position:absolute;
+	position: relative;
 	width: 100%;
-	top:74px;
+	top: 90px;
 	z-index: 1;
 }
 
 nav
 {
-  float: right;
-  margin-right: 0px;
-  margin-top: 30px;
-  height: 52px;
+	position: absolute;
+	float: right;
+	margin-right: 5px;
+	margin-top: 30px;
+	top: 0px;
+	right: 0px;
 }
 
 nav ul
@@ -103,13 +99,36 @@ nav ul li a p
 	.content{
 		width:100%;
 	}
-	.header a{
-		display:block;
-		text-align:center;
-		font-size:10px;
-		text-shadow:none;
+}
+
+@media screen and (max-width: 425px) {
+	hr{
+		top: 66px;
 	}
-	.header span.right_ab{
-		float:none;
+	header img.title-logo
+	{
+		width: 140px;
+	}
+	nav
+	{
+		margin-right: -30px;
+		margin-top: 14px;
+	    -ms-transform: scale(0.7,0.7); /* IE 9 */
+	    -webkit-transform: scale(0.7,0.7); /* Safari */
+	    transform: scale(0.7,0.7);
+	}
+}
+
+@media screen and (max-width: 340px) {
+	hr{
+		top: 50px;
+	}
+	header img.title-logo
+	{
+		width: 100px;
+	}
+	nav
+	{
+		margin-top: -2px;
 	}
 }
