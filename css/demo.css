@@ -101,7 +101,7 @@ nav ul li a p
 	}
 }
 
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 485px) {
 	hr{
 		top: 66px;
 	}
