@@ -1,6 +1,5 @@
 @import url('reset.css');
 
-/* General Codrops Demo Style */
 body{
 	background:#000000;
 	color:#FFCC00;
@@ -24,7 +23,7 @@ p.sub{
 }
 .content{
 	width:895px;
-    margin: 20px auto;
+	margin: 20px auto;
 }
 
 header
@@ -113,9 +112,9 @@ nav ul li a p
 	{
 		margin-right: -30px;
 		margin-top: 14px;
-	    -ms-transform: scale(0.7,0.7); /* IE 9 */
-	    -webkit-transform: scale(0.7,0.7); /* Safari */
-	    transform: scale(0.7,0.7);
+		-ms-transform: scale(0.7,0.7); /* IE 9 */
+		-webkit-transform: scale(0.7,0.7); /* Safari */
+		transform: scale(0.7,0.7);
 	}
 }
 
