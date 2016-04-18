@@ -160,11 +160,12 @@ li:nth-child(19) .imgdiv,
 	display: block;
 }
 
-.Controller { z-index: 10000; position: absolute; left: 50%; margin-top: 130px; }
-#relativediv { position: relative; left: -50%; }
-.Controller img { margin-right: 3px; position: relative; opacity: .6; cursor: pointer; }
+.Controller { z-index: 10000; position: absolute; width: 111%; margin-top: 130px; pointer-events: none; }
+#relativediv { position: relative; left: -5%;}
+.Controller img { position: relative; opacity: .6; cursor: pointer; pointer-events: all; }
 .Controller img:hover { opacity: 1; }
 #prev {-webkit-transform: scaleX(-1); transform: scaleX(-1);}
+#next { float: right; }
 #play { position: relative; }
 #pause-span { visibility: hidden; position: relative; }
 #pause { position: absolute; right: 100%; }
@@ -187,3 +188,13 @@ li:nth-child(19) .imgdiv,
 		opacity 3s ease-in-out;
 }
 .modified { opacity: 1; -webkit-transform: scale(0); transform: scale(0); }
+
+
+@media screen and (max-width: 500px) {
+	.content{
+		width:100%;
+	}
+
+	.Controller { width: 100%; }
+	#relativediv { left: 0%;}
+}
