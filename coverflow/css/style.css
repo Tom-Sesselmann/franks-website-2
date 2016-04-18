@@ -160,7 +160,7 @@ li:nth-child(19) .imgdiv,
 	display: block;
 }
 
-.Controller { z-index: 10000; position: absolute; left: 50%; margin-top: 480px; }
+.Controller { z-index: 10000; position: absolute; left: 50%; margin-top: 130px; }
 #relativediv { position: relative; left: -50%; }
 .Controller img { margin-right: 3px; position: relative; opacity: .6; cursor: pointer; }
 .Controller img:hover { opacity: 1; }
