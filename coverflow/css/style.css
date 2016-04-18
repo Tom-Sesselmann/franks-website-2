@@ -63,6 +63,13 @@
 	margin: auto;
 }
 
+#coverflow .zoom {
+	width: 30px;
+	position: absolute;
+	right: 8px;
+	bottom: 8px;
+}
+
 #coverflow .image {
 	max-width: 300px;
 	max-height: 300px;
