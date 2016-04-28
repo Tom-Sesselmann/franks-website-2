@@ -205,3 +205,53 @@ li:nth-child(19) .imgdiv,
 	.Controller { width: 100%; }
 	#relativediv { left: 0%;}
 }
+
+@media screen and (max-width: 450px) {
+
+	li:nth-child(19) .imgdiv,
+	#coverflow ul li .straight {
+		-webkit-transform: rotateY(0deg) scale(1.4);
+		transform: rotateY(0deg) scale(1.4);
+	}
+
+}
+
+@media screen and (max-width: 420px) {
+
+	li:nth-child(19) .imgdiv,
+	#coverflow ul li .straight {
+		-webkit-transform: rotateY(0deg) scale(1.3);
+		transform: rotateY(0deg) scale(1.3);
+	}
+
+}
+
+@media screen and (max-width: 390px) {
+
+	li:nth-child(19) .imgdiv,
+	#coverflow ul li .straight {
+		-webkit-transform: rotateY(0deg) scale(1.2);
+		transform: rotateY(0deg) scale(1.2);
+	}
+
+}
+
+@media screen and (max-width: 360px) {
+
+	li:nth-child(19) .imgdiv,
+	#coverflow ul li .straight {
+		-webkit-transform: rotateY(0deg) scale(1.1);
+		transform: rotateY(0deg) scale(1.1);
+	}
+
+}
+
+@media screen and (max-width: 330px) {
+
+	li:nth-child(19) .imgdiv,
+	#coverflow ul li .straight {
+		-webkit-transform: rotateY(0deg) scale(1.0);
+		transform: rotateY(0deg) scale(1.0);
+	}
+
+}
