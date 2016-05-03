@@ -110,31 +110,31 @@
 	text-align: center;
 }
 
-li:nth-child(-n+18) .imgdiv,
+li:nth-child(-n+0) .imgdiv,
 #coverflow ul li .leftItems {
 	-webkit-transform: perspective(600px) rotateY(60deg);
 	transform: perspective(600px) rotateY(60deg);
 }
 
-li:nth-child(n+20) .imgdiv,
+li:nth-child(n+2) .imgdiv,
 #coverflow ul li .rightItems {
 	-webkit-transform: perspective(600px) rotateY(-60deg);
 	transform: perspective(600px) rotateY(-60deg);
 }
 
-li:nth-child(19) .imgdiv,
+li:nth-child(1) .imgdiv,
 #coverflow ul li .straight {
 	-webkit-transform: rotateY(0deg) scale(1.5);
 	transform: rotateY(0deg) scale(1.5);
 }
 
-#coverflow li:nth-child(-n+18),
+#coverflow li:nth-child(-n+0),
 #coverflow ul li.leftLI {
 	-webkit-transform: translate3d(-100px, 0, 0);
 	transform: translate3d(-100px, 0, 0);
 }
 
-#coverflow li:nth-child(n+20),
+#coverflow li:nth-child(n+2),
 #coverflow ul li.rightLI {
 	-webkit-transform: translate3d(100px, 0, 0);
 	transform: translate3d(100px, 0, 0);
@@ -208,7 +208,7 @@ li:nth-child(19) .imgdiv,
 
 @media screen and (max-width: 450px) {
 
-	li:nth-child(19) .imgdiv,
+	li:nth-child(1) .imgdiv,
 	#coverflow ul li .straight {
 		-webkit-transform: rotateY(0deg) scale(1.4);
 		transform: rotateY(0deg) scale(1.4);
@@ -218,7 +218,7 @@ li:nth-child(19) .imgdiv,
 
 @media screen and (max-width: 420px) {
 
-	li:nth-child(19) .imgdiv,
+	li:nth-child(1) .imgdiv,
 	#coverflow ul li .straight {
 		-webkit-transform: rotateY(0deg) scale(1.3);
 		transform: rotateY(0deg) scale(1.3);
@@ -228,7 +228,7 @@ li:nth-child(19) .imgdiv,
 
 @media screen and (max-width: 390px) {
 
-	li:nth-child(19) .imgdiv,
+	li:nth-child(1) .imgdiv,
 	#coverflow ul li .straight {
 		-webkit-transform: rotateY(0deg) scale(1.2);
 		transform: rotateY(0deg) scale(1.2);
@@ -238,7 +238,7 @@ li:nth-child(19) .imgdiv,
 
 @media screen and (max-width: 360px) {
 
-	li:nth-child(19) .imgdiv,
+	li:nth-child(1) .imgdiv,
 	#coverflow ul li .straight {
 		-webkit-transform: rotateY(0deg) scale(1.1);
 		transform: rotateY(0deg) scale(1.1);
@@ -248,7 +248,7 @@ li:nth-child(19) .imgdiv,
 
 @media screen and (max-width: 330px) {
 
-	li:nth-child(19) .imgdiv,
+	li:nth-child(1) .imgdiv,
 	#coverflow ul li .straight {
 		-webkit-transform: rotateY(0deg) scale(1.0);
 		transform: rotateY(0deg) scale(1.0);
