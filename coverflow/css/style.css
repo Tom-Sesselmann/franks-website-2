@@ -171,7 +171,7 @@ li:nth-child(1) .imgdiv,
 #relativediv { position: relative; left: -5%;}
 .Controller img { position: relative; opacity: .6; cursor: pointer; pointer-events: all; }
 .Controller img:hover { opacity: 1; }
-#prev {-webkit-transform: scaleX(-1); transform: scaleX(-1);}
+#prev {-webkit-transform: scaleX(-1); transform: scaleX(-1); visibility: hidden;}
 #next { float: right; }
 #play { position: relative; }
 #pause-span { visibility: hidden; position: relative; }
